@@ -1,0 +1,67 @@
+import React from "react";
+import Link from "next/link";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+
+export default function Home() {
+  return (
+    <div className="min-h-screen bg-gray-900 text-white">
+      <header className="p-6 flex justify-between items-center bg-gray-800 shadow-lg">
+        <h1 className="text-2xl font-bold">Prem Teja Gundabathina</h1>
+        <nav>
+          <ul className="flex space-x-6">
+            <li><Link href="#about">About</Link></li>
+            <li><Link href="#skills">Skills</Link></li>
+            <li><Link href="#projects">Projects</Link></li>
+            <li><Link href="#contact">Contact</Link></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section className="text-center p-20 bg-gray-700">
+        <h2 className="text-4xl font-bold">Data Engineer | Data Analyst</h2>
+        <p className="mt-4 text-lg">Transforming raw data into meaningful insights using Python, SQL, and Machine Learning.</p>
+        <div className="flex justify-center space-x-6 mt-6">
+          <a href="https://github.com/Gundabathina" target="_blank" rel="noopener noreferrer"><FaGithub size={30} /></a>
+          <a href="https://www.linkedin.com/in/prem-teja-21856a28b/" target="_blank" rel="noopener noreferrer"><FaLinkedin size={30} /></a>
+          <a href="mailto:pgundabathin@binghamton.edu"><FaEnvelope size={30} /></a>
+        </div>
+      </section>
+
+      <section id="about" className="p-10">
+        <h2 className="text-3xl font-bold">About Me</h2>
+        <p className="mt-4 text-lg">I am a Data Engineer with experience in data analytics, data visualization, and machine learning. With a strong background in Python, SQL, and R, I have worked on multiple real-world projects that involve data modeling, predictive analysis, and dashboard development using Tableau and Power BI.</p>
+      </section>
+
+      <section id="skills" className="p-10 bg-gray-800">
+        <h2 className="text-3xl font-bold">Skills</h2>
+        <ul className="mt-4 text-lg list-disc list-inside">
+          <li>Programming: Python, SQL, R</li>
+          <li>Data Visualization: Tableau, Power BI, Excel</li>
+          <li>Machine Learning: Scikit-Learn, Pandas, NumPy</li>
+          <li>Databases: MySQL, SQL Server</li>
+          <li>Data Quality: Informatica DQ, Collibra</li>
+        </ul>
+      </section>
+
+      <section id="projects" className="p-10">
+        <h2 className="text-3xl font-bold">Projects</h2>
+        <ul className="mt-4 text-lg list-disc list-inside">
+          <li><a href="https://github.com/Gundabathina/Healthcare-Data-Analysis-Using-Python" target="_blank">Healthcare Data Analysis Using Python</a></li>
+          <li><a href="https://github.com/Gundabathina/US-Regional-Mortality-Analysis-project" target="_blank">US Regional Mortality Analysis</a></li>
+          <li><a href="https://github.com/Gundabathina/House-Price-Prediction-using-Machine-Learning" target="_blank">House Price Prediction using Machine Learning</a></li>
+          <li><a href="https://github.com/Gundabathina/Tesla-Stock-Price-Analysis-and-Prediction-Using-Python" target="_blank">Tesla Stock Price Prediction</a></li>
+        </ul>
+      </section>
+
+      <section id="contact" className="p-10 bg-gray-800">
+        <h2 className="text-3xl font-bold">Contact Me</h2>
+        <p className="mt-4 text-lg">Email: <a href="mailto:pgundabathin@binghamton.edu">pgundabathin@binghamton.edu</a></p>
+        <p className="mt-2 text-lg">LinkedIn: <a href="https://www.linkedin.com/in/prem-teja-21856a28b/" target="_blank">prem-teja-21856a28b</a></p>
+      </section>
+
+      <footer className="text-center p-6 bg-gray-700 mt-10">
+        <p>© 2024 Prem Teja Gundabathina. All rights reserved.</p>
+      </footer>
+    </div>
+  );
+}
