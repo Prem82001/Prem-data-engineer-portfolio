@@ -38,8 +38,9 @@ export default function Home() {
           <li>Programming: Python, SQL, R</li>
           <li>Data Visualization: Tableau, Power BI, Excel</li>
           <li>Machine Learning: Scikit-Learn, Pandas, NumPy</li>
-          <li>Databases: MySQL, SQL Server</li>
-          <li>Data Quality: Informatica DQ, Collibra</li>
+          <li>Databases: MySQL, SQL Server, PostgreSQL</li>
+          <li>Big Data: Apache Spark, Hadoop</li>
+          <li>Cloud Platforms: AWS (S3, Redshift, Lambda)</li>
         </ul>
       </section>
 
